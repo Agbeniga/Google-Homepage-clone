@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+#nav{
+
+    display: flex;
+    width: 20%;
+    align-items:center;
+    margin-left: auto;
+    justify-content:space-around;
+}
+
+#nav a{
+    color: rgb(26, 25, 25);
+    padding: 7px 15px;
+}
+
+#nav span{
+    color: rgb(26, 25, 25);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+#nav img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#nav img:hover, #nav span:hover{
+    background: rgb(218, 218, 218);
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+main{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.G-red{
+    color:#db3236;
+}
+
+.G-blue{
+    color:#4885ed;
+}
+
+.G-yellow{
+    color:#f4c20d;
+}
+
+.G-green{
+    color:#3cba54;
+}
+/* .searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+input[type="text"]{
+    margin-top: 10px;
+    padding: 10px 10rem;
+    border-radius: 30px;
+    border-color: 1px solid rgb(133, 133, 133);
+    /* outline: none; */
+}
+
+input[type="text"]:focus{
+    border:none;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 5px 5px #888888;
+}
+
+/* .searchBox span{
+    
+} */
+
+.search{
+    position: absolute;
+    padding:17px 10px;
+    min-width: 40px;
+    cursor: pointer;
+}
+
+/* .mic{
+    padding:15px 10px;
+    position: relative;
+    left: -60px;
+    min-width: 40px;
+    cursor: pointer;
+} */
+
+.button{
+    margin-bottom: 30px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a{
+    margin: 50px 5px 10px 5px;
+    background-color: #f8f9fa;
+    padding: 5px 8px;
+    color: black;
+}
+
+.button a:hover{
+    text-decoration: none;
+}
+
+.languages a{
+    font-size: 12px;
+}
+footer{
+    position: absolute;
+    bottom:0;
+    width: 100vw;
+    background: rgb(240, 236, 236);
+}
+
+.countryName{
+    padding: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+.countryName span{
+    margin: 20px;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #222;
+    flex-wrap: wrap;
+    
+}
+
+.main-footer li{
+    display: inline;
+    padding: 12px; 
+}
+
+.main-footer a{
+    
+    color: #222;
+}
+
+@media (max-width: 400) {
+    #nav span{
+        font-size: 20px;
+    }
+
+    input[type="text"]{
+        padding: 10px 3rem;
+        /* outline: none; */
+    }
+}
